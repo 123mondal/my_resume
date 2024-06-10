@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.resume-container {
+  width: 70%;
+  margin: 50px auto;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.resume-header {
+  display: flex;
+  background-color: rgb(97, 183, 218);
+  align-items: center;
+  position: relative;
+
+  height: 200px;
+}
+.profile-picture {
+  width: 220px;
+  clip-path: circle();
+  position: absolute;
+  transform: translate(100px, 70px);
+}
+.header-text-container {
+  color: white;
+  transform: translateX(450px);
+}
+.name {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.work {
+  font-weight: normal;
+  font-size: 20px;
+}
+.main-content {
+  padding-top: 120px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  /* flex-wrap: wrap; */
+}
+.resume-info-card {
+  margin-bottom: 20px;
+}
+.heading h2 {
+  color: skyblue;
+  margin-bottom: 18px;
+}
+.heading {
+  border-bottom: 2px solid skyblue;
+  margin-bottom: 22px;
+}
+.contacts ul {
+  list-style: none;
+}
+.contacts ul li {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+.hard-skills ul {
+  margin-left: 20px;
+}
+.hard-skills ul li {
+  margin-bottom: 10px;
+}
+.soft-skills ul {
+  margin-left: 20px;
+}
+.soft-skills ul li {
+  margin-bottom: 10px;
+}
+.about-me p {
+  line-height: 1.5;
+}
+.column-2 {
+  transform: translateY(-70px);
+}
+.responsibilities ul {
+  margin-left: 20px;
+}
+.responsibilities ul > li {
+  margin-bottom: 10px;
+}
+.responsibilities > p {
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.company-exp {
+  margin-bottom: 30px;
+}
+.company {
+  font-weight: bold;
+}
+.years {
+  font-style: italic;
+  font-size: 14px;
+}
+footer {
+  background-color: skyblue;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer::after {
+  content: "Just coding assignment for PW Skills";
+  color: white;
+  font-size: 12px;
+}
+
+@media (max-width: 1100px) {
+  .header-text-container {
+    transform: translateX(400px);
+  }
+}
+
+@media (max-width: 1000px) {
+  .header-text-container {
+    transform: translateX(300px);
+  }
+  .main-content {
+    flex-wrap: wrap;
+  }
+  .column-2 {
+    transform: none;
+  }
+  .profile-picture {
+    width: 200px;
+    transform: translate(80px, 70px);
+  }
+}
+
+@media (max-width: 870px) {
+  .profile-picture {
+    width: 150px;
+    transform: translate(50px, 0px);
+  }
+  .header-text-container {
+    transform: translateX(250px);
+  }
+  .resume-container {
+    width: 90%;
+  }
+  .main-content {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 650px) {
+  .resume-container {
+    width: 90%;
+  }
+  .main-content {
+    padding: 30px;
+  }
+  .resume-header {
+    flex-direction: column;
+    position: static;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .header-text-container {
+    transform: none;
+    text-align: center;
+  }
+  .profile-picture {
+    position: static;
+    transform: none;
+    padding: 0;
+    margin: 0;
+  }
+}
